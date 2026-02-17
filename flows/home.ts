@@ -29,7 +29,7 @@ export const addProductToCartFlow = async(page: Page) =>{
             const productPage = new ProductPage(page);
             await expect(productPage.getMarker()).toBeVisible();
             await productPage.clickOnAddToCart();
-            await expect(await productPage.addToCartModal.returnAddToCartSeccessTitle()).toBeVisible();
+            await expect(productPage.addToCartModal.returnAddToCartSuccessTitle()).toBeVisible();
             await productPage.addToCartModal.clickOnViewCart();
             const cartPage = new CartPage(page);
             await expect(cartPage.getMarker()).toBeVisible();

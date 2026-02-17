@@ -9,8 +9,6 @@ import { PaymentDonePage } from '../pages/paymentDone.page';
 test("check payment process", async ({page}) =>{
             await loginFlow(page);
             await addProductToCartFlow(page);
-            await loginFlow(page);
-            await addProductToCartFlow(page);
             await clickOnProcceedToCheckout(page);
             const checkoutPage = new CheckoutPage(page);
             await checkoutPage.clickOnPlaceOrderButton();
@@ -20,6 +18,6 @@ test("check payment process", async ({page}) =>{
             await paymentPage.paymentProcess();
             const paymentDonePage = new PaymentDonePage(page);
             await expect(paymentDonePage.getMarker()).toBeVisible();
-
-
 })
+
+

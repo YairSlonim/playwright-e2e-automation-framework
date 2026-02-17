@@ -13,7 +13,5 @@ test('click on category and sSubcategory and expcet the headline be respectively
 })
 
 
-        //await home.productsGrid.clickViewProductByName('Rs. 1500');
-
 
 

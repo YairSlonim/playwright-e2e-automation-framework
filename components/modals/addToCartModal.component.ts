@@ -15,7 +15,7 @@ export class AddToCartModal {
     });
   }
 
-  public async returnAddToCartSeccessTitle() {
+  public returnAddToCartSuccessTitle() {
     return this.addedTtitle;
   }
 

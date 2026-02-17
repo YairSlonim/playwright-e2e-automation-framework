@@ -28,5 +28,10 @@ export class PaymentPage {
 
     public async paymentProcess(){
         await this.nameOnCard.fill("asdsad");
+        await this.cardNumber.fill("1234567890123456");
+        await this.cvc.fill("123");
+        await this.expiryMonth.fill("05");
+        await this.expiryYear.fill("2025");
+        await this.payAndConfirmOrderButton.click();
     }
 }
